@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 	{
 		return (0);
 	}
-	while (check1 && check2->next)
+	while (check1 && check1->next)
 	{
 		check1 = check1->next->next; /*Advances all nodes if it finds a loop */
 		check2 = check2->next; /*Advanced by a single node */
