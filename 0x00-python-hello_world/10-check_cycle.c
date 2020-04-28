@@ -20,7 +20,7 @@ int check_cycle(listint_t *list)
 		check1 = check1->next->next; /*Advances all nodes if it finds a loop */
 		check2 = check2->next; /*Advanced by a single node */
 
-	if (check1 == check2)
+	if (check2 == check1)
 		return (1);
 
 	}
