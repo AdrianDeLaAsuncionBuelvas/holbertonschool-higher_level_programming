@@ -19,6 +19,6 @@ def roman_to_int(roman_string):
             if key == roman_string[i]:
                 result += value
                 if (value_previous < value):
-                    result -= (2 * value_previous)
+                    result -= (value_previous * 2)
                     value_previous = value
     return (result)
