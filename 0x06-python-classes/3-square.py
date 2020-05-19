@@ -3,6 +3,9 @@
 
 
 class Square:
+    """Class Square
+    Attributes:
+    size -- size of square"""
     def __init__(self, size=0):
         """Class Method Private instance attribute"""
         if type(size) is int:
