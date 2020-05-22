@@ -38,6 +38,14 @@ Adds a long Number
 >>> add_integer(99999999)
 100000097
 
+Adds Decimal Number
+>>> add_integer(12.8, 30.9)
+42
+
+Adds Decimal Number
+>>> add_integer(60.202, -78)
+-18
+
 Try adds a String with a Number
 >>> add_integer("Hello", -8)
 Traceback (most recent call last):
