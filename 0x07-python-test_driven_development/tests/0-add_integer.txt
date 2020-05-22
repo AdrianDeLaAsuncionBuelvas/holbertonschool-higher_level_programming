@@ -1,0 +1,58 @@
+=================
+Test Add Integer
+=================
+
+Import Function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+Adds two Nummbers
+>>> add_integer(3, 7)
+10
+
+Adds Two Numbers
+>>> add_integer(8, -7)
+1
+
+Adds a negative number
+>>> add_integer(-1, 8)
+7
+
+Adds Two negative number
+>>> add_integer(-4, -6)
+-10
+
+Adds a number
+>>> add_integer(9)
+107
+
+Adds a negative number
+>>> add_integer(0, -2)
+-2
+
+Adds a Number
+>>> add_integer(1909)
+2007
+
+Adds a long Number
+>>> add_integer(99999999)
+100000097
+
+Try adds a String with a Number
+>>> add_integer("Hello", -8)
+Traceback (most recent call last):
+	    ...
+TypeError: a must be an integer
+
+Try adds a String with a Number
+>>> add_integer(9, "Hello")
+Traceback (most recent call last):
+	    ...
+TypeError: b must be an integer
+
+
+Try adds Two Strings
+>>> add_integer("Hello", "Holberton")
+Traceback (most recent call last):
+	    ...
+TypeError: a must be an integer
