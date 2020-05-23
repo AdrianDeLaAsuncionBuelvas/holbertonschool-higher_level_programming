@@ -25,8 +25,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([0, 0, 0, 0]), 0)
         self.assertEqual(max_integer([2007]), 2007)
         self.assertEqual(max_integer([-1, -2, -3, -4, 0]), 0)
-        self.assertEqual(max_integer([-2222, 30, 75]), 75)
-        self.assertEqual(max_integer([-1024, -2202, -7]), -7)
+        self.assertEqual(max_integer([2, 4, 3]), 4)
+        self.assertEqual(max_integer([3402, 1024, -7]), 3402)
 
     if __name__ == '__main__':
         unittest.main()
