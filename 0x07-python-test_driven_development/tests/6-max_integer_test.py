@@ -11,7 +11,7 @@ class TestMaxInteger(unittest.TestCase):
  constructing and running tests
     """
 
-    def test_empy_list(self):
+    def test_empty_list(self):
         """
         check if the list is empty
         """
@@ -24,7 +24,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertEqual(max_integer([0, 0, 0, 0]), 0)
         self.assertEqual(max_integer([2007]), 2007)
-        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+        self.assertEqual(max_integer([-1, -2, -3, -4, 0]), 0)
         self.assertEqual(max_integer([-2222, 30, 75]), 75)
         self.assertEqual(max_integer([-1024, -2202, -7]), -7)
 
