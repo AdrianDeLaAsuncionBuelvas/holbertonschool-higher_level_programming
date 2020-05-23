@@ -38,6 +38,16 @@ o;n?
 <BLANKLINE>
 
 
+>>> text_indentation("    hello")
+hello
+
+>>> text_indentation("world      ")
+world
+
+Test for empty string
+>>> text_indentation("")
+
+
 >>> text_indentation()
 Traceback (most recent call last):
     	     ...
