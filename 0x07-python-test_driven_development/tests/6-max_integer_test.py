@@ -1,15 +1,10 @@
 #!/usr/bin/python3
+"""Unittest for max_integer([..])
 """
-add Unittests
-"""
-
-
 import unittest
-
 max_integer = __import__('6-max_integer').max_integer
 
-
-class Max_Integer(unittest.TestCase):
+class TestMaxInteger(unittest.TestCase):
     """
     class Max_Integer -- check the numbers of a function
     unittest.TestCase -- module provides a rich set of tools for\
