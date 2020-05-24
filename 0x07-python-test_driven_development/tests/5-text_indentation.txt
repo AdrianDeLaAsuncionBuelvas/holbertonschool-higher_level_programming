@@ -6,9 +6,12 @@ Text Indentation
 Import
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-
->>> text_indentation("Holberton")
-Holberton
+>>> text = "Hello, Holberton. Hi How is it going Today?"
+>>> text_indentation(text)
+Hello, Holberton.
+<BLANKLINE>
+Hi How is it going Today?
+<BLANKLINE>
 
 
 >>> text_indentation(2020)
@@ -39,10 +42,10 @@ o;n?
 
 
 >>> text_indentation("    hello")
-hello
+    hello
 
->>> text_indentation("world      ")
-world
+>>> text_indentation("world    ")
+world    
 
 Test for empty string
 >>> text_indentation("")
