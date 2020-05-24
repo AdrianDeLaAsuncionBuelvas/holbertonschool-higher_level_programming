@@ -41,6 +41,11 @@ o;n?
 <BLANKLINE>
 
 
+>>> text_indentation(".")
+.
+<BLANKLINE>
+
+
 >>> text_indentation("    hello")
     hello
 
