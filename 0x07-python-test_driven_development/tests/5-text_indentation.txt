@@ -14,6 +14,12 @@ Hi How is it going Today?
 <BLANKLINE>
 
 
+>>> text_indentation(7)
+Traceback (most recent call last):
+ 	     ...
+TypeError: text must be a string
+
+
 >>> text_indentation(2020)
 Traceback (most recent call last):
 	...
