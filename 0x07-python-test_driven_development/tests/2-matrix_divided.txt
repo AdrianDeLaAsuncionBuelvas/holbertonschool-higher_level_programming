@@ -10,10 +10,11 @@ Import Function Matrix
 >>> matrix_divided(matrix, 8)
 [[0.12, 0.25, 0.38], [0.5, 0.62, 0.75]]
 
+>>> matrix_divided()
+Traceback (most recent call last):
+    	 ...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
->>> matrix = [[3, 90, 52], [8, 9, 0]]
->>> matrix_divided(matrix, 2)
-[[1.5, 45.0, 26.0], [4.0, 4.5, 0.0]]
 
 
 >>> matrix = [[3, 90, 52], [8, 9, 0]]
@@ -46,6 +47,13 @@ TypeError: must be a number
 
 >>> empty = [[],[]]
 >>> matrix_divided(empty, 3)
+Traceback (most recent call last):
+    	 ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+>>> matrix = {'H' : 9, 'E': 7, 'V': 13}
+>>> matrix_divided(matrix, 3)
 Traceback (most recent call last):
     	 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
