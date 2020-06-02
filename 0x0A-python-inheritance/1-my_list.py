@@ -9,8 +9,10 @@ class MyList(list):
     """
     MyList inherits from list
     """
+
     def print_sorted(self):
         """
-        prints the list, but sorted (ascending sort)
+        print_sorted - prints the list, but sorted (ascending sort)
         """
+
         print(sorted(self))
