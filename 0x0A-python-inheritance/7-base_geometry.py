@@ -9,6 +9,9 @@ class BaseGeometry():
     """
     BaseGeometry - Empty Class
     """
+    pass
+
+
     def area(self):
         """
         Area of a Geometry
