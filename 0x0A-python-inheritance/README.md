@@ -1,5 +1,5 @@
 # Python - Inheritance
-![Error](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftechvidvan.com%2Ftutorials%2Fpython-inheritance%2F&psig=AOvVaw23gOgFpTk13KJgsG89wsKt&ust=1591225998926000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCQsfeg5OkCFQAAAAAdAAAAABAD)
+![Error](https://1.bp.blogspot.com/-9rE7m4Kwgi8/V__LQj9RKiI/AAAAAAAAGVk/tOWZoBV0IpwFRA40YoEAlF5_YOMVQDOewCLcB/s1600/fig108_01_0.jpg)
 
 ## Table of Contents
 * [Description](#description)
