@@ -9,7 +9,6 @@ through and integer as they should
 
 
 >>> bg = BaseGeometry()
-
 >>> bg.integer_validator("my_int", "12")
 Traceback (most recent call last):
 	  ...
@@ -88,3 +87,22 @@ If a list is passed through:
     Traceback (most recent call last):
     	    ...
     TypeError: nope must be an integer
+
+
+===========================Docstrings============================================
+
+>>> m_doc = __import__('7-base_geometry').__doc__
+>>> len(m_doc) > 1
+True
+
+>>> c_doc = __import__('7-base_geometry').BaseGeometry.__doc__
+>>> len(c_doc) > 1
+True
+
+>>> m_doc = __import__('7-base_geometry').BaseGeometry.integer_validator.__doc__
+>>> len(m_doc) > 1
+True
+
+>>> m_doc = __import__('7-base_geometry').BaseGeometry.area.__doc__
+>>> len(m_doc) > 1
+True
