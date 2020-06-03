@@ -11,7 +11,6 @@ class BaseGeometry():
     """
     pass
 
-
     def area(self):
         """
         Area of a Geometry
