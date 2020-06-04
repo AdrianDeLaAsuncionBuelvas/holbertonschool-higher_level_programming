@@ -11,7 +11,6 @@ def load_from_json_file(filename):
     filename - Name of a File
     """
 
-    with open(filename, encoding='utf-8') as file_json:
+    with open(filename, mode='r', encoding='utf-8') as file_json:
         for line in file_json:
-            new_obj = json.loads(line)
-    return(new_obj)
+            return(json.loads(line))
