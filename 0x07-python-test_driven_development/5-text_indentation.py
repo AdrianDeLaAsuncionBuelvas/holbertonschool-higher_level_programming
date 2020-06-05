@@ -27,7 +27,7 @@ def text_indentation(text):
             tok = 0
             continue
         if i is '.' or i is '?' or i is ':':
-            print("{}\n".format(i))
+            print("{}\n\n".format(i))
             tok = 1
         else:
             print(i, end='')
