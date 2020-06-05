@@ -12,9 +12,9 @@ def matrix_mul(m_a, m_b):
     m_b - Matrix 2
     """
 
-    if type(m_a) is not list:
+    if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
-    if type(m_b) is not list:
+    if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
     if not len(m_a):
         raise ValueError("m_a can't be empty")
