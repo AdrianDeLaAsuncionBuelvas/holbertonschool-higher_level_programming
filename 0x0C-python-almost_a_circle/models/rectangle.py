@@ -5,7 +5,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """Class defining a square """
+    """Class Defining a Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
@@ -157,10 +157,7 @@ to a dictionary: key/value
         return (dt)
 
     def __str__(self):
-        """
-        Args:
-            str method return String with datas
-        """
+        """method return String with datas"""
 
         str = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
         return (str.format(self.id, self.__x, self.__y, \

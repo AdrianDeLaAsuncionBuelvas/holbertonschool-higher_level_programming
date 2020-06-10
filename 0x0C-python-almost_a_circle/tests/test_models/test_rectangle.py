@@ -161,3 +161,31 @@ class RectangleTest(unittest.TestCase):
             with self.assertRaises(TypeError) as x:
                 r = Rectangle(13, 20, 17, 8.0)
             self.assertEqual("y must be an integer")
+
+    def test_docstrings(self):
+        """checks if Rectangle has a docstring"""
+        self.assertEqual(len(Rectangle.__doc__) > 0, True)
+        self.assertTrue(hasattr(Rectangle, "__init__"))
+        self.assertTrue(Rectangle.__init__.__doc__)
+        self.assertTrue(hasattr(Rectangle, "width"))
+        self.assertTrue(Rectangle.width.__doc__)
+        self.assertTrue(hasattr(Rectangle, "height"))
+        self.assertTrue(Rectangle.height.__doc__)
+        self.assertTrue(hasattr(Rectangle, "x"))
+        self.assertTrue(Rectangle.x.__doc__)
+        self.assertTrue(hasattr(Rectangle, "y"))
+        self.assertTrue(Rectangle.y.__doc__)
+        self.assertTrue(hasattr(Rectangle, "area"))
+        self.assertTrue(Rectangle.area.__doc__)
+        self.assertTrue(hasattr(Rectangle, "display"))
+        self.assertTrue(Rectangle.display.__doc__)
+        self.assertTrue(hasattr(Rectangle, "__str__"))
+        self.assertTrue(Rectangle.__str__.__doc__)
+        self.assertTrue(hasattr(Rectangle, "update"))
+        self.assertTrue(Rectangle.update.__doc__)
+        self.assertTrue(hasattr(Rectangle, "to_dictionary"))
+        self.assertTrue(Rectangle.to_dictionary.__doc__)
+
+
+if __name__ == '__main__':
+    unittest.main()
