@@ -57,7 +57,6 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual("__init__() missing 1 required positional argument:\
  'height'", str(x.exception))
 
-
     def test_05_zero_input(self):
         """Test 0 number"""
         with self.assertRaises(ValueError) as x:
@@ -110,7 +109,7 @@ class RectangleTest(unittest.TestCase):
         """Test for attributes being private"""
         r = Rectangle(5, 2, 10, 20, 7)
         dt = {"_Rectangle__width": 5, "_Rectangle__height": 2,
-             "_Rectangle__x": 10, "_Rectangle__y": 20, "id": 7}
+              "_Rectangle__x": 10, "_Rectangle__y": 20, "id": 7}
         self.assertEqual(r.__dict__, dt)
 
     def test_11_None_input(self):
