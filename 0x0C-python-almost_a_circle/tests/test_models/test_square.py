@@ -341,16 +341,6 @@ class SquareTest(unittest.TestCase):
         r.update(7, 2, 3, 4)
         self.assertEqual(r.__str__(), "[Square] (7) 3/4 - 2")
 
-    def test_28_update_kwargs(self):
-        """Test for update with dict."""
-        r = Square(10, 10, 10, 1)
-        r.update(height=1)
-        self.assertEqual(r.__str__(), "[Square] (1) 10/10 - 10")
-        r.update(width=1, x=2)
-        self.assertEqual(r.__str__(), "[Square] (1) 2/10 - 1")
-        r.update(y=1, width=2, x=3, id=89)
-        self.assertEqual(r.__str__(), "[Square] (89) 3/1 - 2")
-
     def test_29_args_and_kwargs(self):
         """Test for both args and kwargs."""
         r = Square(1, 2, 3, 4)
@@ -433,19 +423,6 @@ class SquareTest(unittest.TestCase):
         with open("Square.json", "r") as file:
             self.assertEqual(len(file.read()), len(res))
 
-    def test_3E_save_to_file_different_types(self):
-        """Test for save_to_file method with different types."""
-        r = Rectangle(1, 2)
-        s = Square(3, 4)
-        with self.assertRaises(ValueError) as e:
-            Base.save_to_file([r, s])
-        self.assertEqual("all elements of list_objs must match",
-                         str(e.exception))
-        with self.assertRaises(ValueError) as e:
-            Base.save_to_file([s, r])
-        self.assertEqual("all elements of list_objs must match",
-                         str(e.exception))
-
     def test_3F_from_json_string(self):
         """Test for from_json_string method."""
         list_input = [{'id': 89, 'size': 10},
@@ -489,5 +466,18 @@ class SquareTest(unittest.TestCase):
         with self.assertRaises(TypeError):
             Square.save_to_file([], 6)
 
+    def test_docstrings(self):
+        """checks if Square has a docstring"""
+        self.assertEqual(len(Square.__doc__) > 0, True)
+        self.assertTrue(hasattr(Square, "__init__"))
+        self.assertTrue(Square.__init__.__doc__)
+        self.assertTrue(hasattr(Square, "size"))
+        self.assertTrue(Square.size.__doc__)
+        self.assertTrue(hasattr(Square, "__str__"))
+        self.assertTrue(Square.__str__.__doc__)
+        self.assertTrue(hasattr(Square, "update"))
+        self.assertTrue(Square.update.__doc__)
+        self.assertTrue(hasattr(Square, "to_dictionary"))
+        self.assertTrue(Square.to_dictionary.__doc__)
 if __name__ == '__main__':
     unittest.main()
