@@ -151,7 +151,7 @@ to a dictionary: key/value
         Returns the dictionary
         """
 
-        dt = {'x': self.x, 'width': self.width, 'id': self.id, \
+        dt = {'x': self.x, 'width': self.width, 'id': self.id,
               'height': self.height, 'y': self.y}
 
         return (dt)
@@ -159,6 +159,5 @@ to a dictionary: key/value
     def __str__(self):
         """method return String with datas"""
 
-        str = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
-        return (str.format(self.id, self.__x, self.__y, \
-                           self.__width, self.__height))
+        return ("[Rectangle] ({:d}) {:d}/{:d} - \
+{:d}/{:d}".format(self.id, self.__x, self.__y, self.__width, self.__height))
