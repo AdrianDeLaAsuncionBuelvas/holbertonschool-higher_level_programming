@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Write a script that lists all states from the database hbtn_0e_0_usa.
+# write a script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, write one that is safe from MySQL injections!
 
 import MySQLdb
 import sys
