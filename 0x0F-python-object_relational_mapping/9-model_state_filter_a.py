@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# Write a script that lists all State objects from the database hbtn_0e_6_usa
+"""Write a script that lists all State objects from the database \
+hbtn_0e_6_usa"""
 
 from model_state import Base, State
 import sys
@@ -14,13 +15,13 @@ if __name__ == "__main__":
         sys.argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-Session = sessionmaker()
-Session.configure(bind=engine)
-session = Session()
+    Session = sessionmaker()
+    Session.configure(bind=engine)
+    session = Session()
 
-req = session.query(State).order_by(State.id)
-for i, state in enumerate(req, 1):
-    if 'a' in state.name:
-        print("{}: {}".format(i, state.name))
+    req = session.query(State).order_by(State.id)
+    for i, state in enumerate(req, 1):
+        if 'a' in state.name:
+            print("{}: {}".format(i, state.name))
 
-session.close()
+    session.close()
