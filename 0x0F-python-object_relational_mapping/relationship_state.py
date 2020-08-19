@@ -2,7 +2,7 @@
 """Relation with City Module"""
 
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import relationship, backref
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -10,8 +10,8 @@ Base = declarative_base()
 
 class State(Base):
     """Class that inherits from Base"""
-    __tablename__ = 'states'
 
+    __tablename__ = 'states'
     id = Column(
         Integer,
         primary_key=True,
@@ -23,4 +23,4 @@ class State(Base):
         nullable=False
         )
 
-    cities = relationship('City', backref=backref('state'))
+    cities = relationship('City', backref='state')

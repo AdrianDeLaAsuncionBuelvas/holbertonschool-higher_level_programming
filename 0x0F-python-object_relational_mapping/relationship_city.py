@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 """Relation City with State Module"""
 
-from sqlalchemy.ext.declarative import declarative_base
+from relationship_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
-
-Base = declarative_base()
 
 
 class City(Base):
