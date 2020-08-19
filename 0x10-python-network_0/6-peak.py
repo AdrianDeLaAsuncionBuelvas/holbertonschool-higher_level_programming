@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""""""
+"""Find Peak Function Module"""
+
 
 def find_peak(list_of_integer):
     """function that finds a peak in a list of unsorted integers"""
@@ -7,6 +8,7 @@ def find_peak(list_of_integer):
         return (None)
     return R_fp(list_of_integer, 0, len(list_of_integer) - 1,
                 len(list_of_integer))
+
 
 def R_fp(arr, low, high, num):
     """function complement"""
