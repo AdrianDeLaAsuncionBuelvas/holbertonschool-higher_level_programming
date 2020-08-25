@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """HTTPError Request Module"""
 import urllib.request
-from urllib.error import HTTPError
-import urllib.parse
+import urllib.error
 import sys
 
 if __name__ == '__main__':
