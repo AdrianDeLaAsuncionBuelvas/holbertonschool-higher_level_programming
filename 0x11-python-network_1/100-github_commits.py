@@ -17,7 +17,7 @@ if __name__ == '__main__':
         if length > 10:
             length = 10
         for i in range(length):
-            print("{}.{}".format(R_json[i].get('sha'),
+            print("{}: {}".format(R_json[i].get('sha'),
                                  R_json[i].get('commit')
                                  .get('author').get('name')))
     except Exception:
