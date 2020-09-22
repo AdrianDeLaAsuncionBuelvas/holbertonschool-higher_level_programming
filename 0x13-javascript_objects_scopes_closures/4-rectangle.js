@@ -15,15 +15,15 @@ class Rectangle {
     }
   }
 
-  rotate () {
-    this.width += this.height;
-    this.height = this.width - this.height;
-    this.width -= this.height;
+    rotate () {
+	const temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   }
 
   double () {
-    this.width *= 2;
-    this.heigth *= 2;
+    this.width *= 4;
+    this.heigth *= 4;
   }
 }
 
