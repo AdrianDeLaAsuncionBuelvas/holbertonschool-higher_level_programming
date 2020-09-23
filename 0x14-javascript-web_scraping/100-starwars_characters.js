@@ -18,4 +18,4 @@ request.get(url, function (err, res, body) {
       console.log(name);
     });
   }
-});
+})
